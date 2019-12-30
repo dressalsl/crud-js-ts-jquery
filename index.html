@@ -11,5 +11,60 @@
 </head>
 <body>
     
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="">Documento</label>
+                    <input type="text" class="form-contol" id="txtDocumento">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="">Nome</label>
+                    <input type="text" class="form-contol" id="txtNome">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="">E-mail</label>
+                    <input type="email" class="form-contol" id="txtEmail">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="">Cor</label>
+                    <input type="color" class="form-contol" id="txtCor">
+                </div>
+            </div>
+            <input type="hidden" id="txtId">
+            <div class="col-12">
+                <button type="button" class="btn btn-success float-right">Salvar</button>
+                <button style="display: none" type="button" class="btn btn-warning">Alterar</button>
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Cor</th>
+                        <th>Opcoes</th>
+                    </tr>
+                </thead>
+                <tbody id="tblDados">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
